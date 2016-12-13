@@ -5,9 +5,12 @@ stealTools.export({
 		config: __dirname + "/package.json!npm"
 	},
 	outputs: {
-		"+cjs": {},
 		"+amd": {},
-		"+global-js": {}
+		"+standalone": {
+			exports: {
+				"can-namespace": "can"
+			}
+		}
 	}
 }).catch(function(e){
 

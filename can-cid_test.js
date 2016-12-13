@@ -1,5 +1,5 @@
 var QUnit = require('steal-qunit');
-var cid = require('./can-cid');
+var cid = require('can-cid');
 var namespace = require('can-namespace');
 var clone = require('steal-clone');
 

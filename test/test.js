@@ -1,1 +1,1 @@
-import '../src/can-cid_test';
+import '../can-cid_test';
