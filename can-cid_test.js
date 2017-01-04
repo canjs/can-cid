@@ -36,7 +36,10 @@ QUnit.test('should throw if can-namespace.cid is already defined', function() {
 	stop();
 	clone({
 		'can-namespace': {
-			cid: {}
+			default: {
+				cid: {}
+			},
+			__useDefault: true
 		}
 	})
 	.import('./can-cid')
