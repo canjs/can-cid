@@ -33,11 +33,6 @@
     "plugin",
     "donejs"
   ],
-  "steal": {
-    "plugins": [
-      "steal-qunit"
-    ]
-  },
   "dependencies": {
     "can-namespace": "1.0.0"
   },
