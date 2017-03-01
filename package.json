@@ -1,6 +1,6 @@
 {
   "name": "can-cid",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Utility for getting a unique identifier for an object",
   "homepage": "http://canjs.com",
   "repository": {
