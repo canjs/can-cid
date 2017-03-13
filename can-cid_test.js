@@ -48,7 +48,8 @@ QUnit.test('should throw if can-namespace.cid is already defined', function() {
 		start();
 	})
 	.catch(function(err) {
-		ok(err && err.message.indexOf('can-cid') >= 0, 'should throw an error about can-cid');
+		var errMsg = err && err.message || err;
+		ok(errMsg.indexOf('can-cid') >= 0, 'should throw an error about can-cid');
 		start();
 	});
 });
