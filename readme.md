@@ -1,5 +1,7 @@
 # can-cid
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/canjs/can-cid.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/canjs/can-cid.png?branch=master)](https://travis-ci.org/canjs/can-cid)
 
 Utility for getting a unique identifier for an object
