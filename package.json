@@ -37,7 +37,7 @@
     "can-namespace": "1.0.0"
   },
   "devDependencies": {
-    "documentjs": "^0.4.2",
+    "documentjs": "^0.5.0",
     "done-serve": "^0.2.0",
     "donejs-cli": "^0.9.4",
     "generator-donejs": "^1.0.7",
