@@ -1,74 +1,28 @@
 # can-cid
 
-[![Build Status](https://travis-ci.org/canjs/can-cid.png?branch=master)](https://travis-ci.org/canjs/can-cid)
+[![Join the chat at https://gitter.im/canjs/canjs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/canjs/canjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/canjs/can-cid/blob/master/LICENSE.md)
+[![npm version](https://badge.fury.io/js/can-cid.svg)](https://www.npmjs.com/package/can-cid)
+[![Travis build status](https://travis-ci.org/canjs/can-cid.svg?branch=master)](https://travis-ci.org/canjs/can-cid)
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/canjs/can-cid?branch=master&svg=true)](https://ci.appveyor.com/project/matthewp/can-cid)
+[![Coverage status](https://coveralls.io/repos/github/canjs/can-cid/badge.svg?branch=master)](https://coveralls.io/github/canjs/can-cid?branch=master)
+[![Greenkeeper badge](https://badges.greenkeeper.io/canjs/can-cid.svg)](https://greenkeeper.io/)
 
 Utility for getting a unique identifier for an object
 
-## Usage
+## Documentation
 
-### ES6 use
+Read the [can-cid API docs on CanJS.com](https://canjs.com/doc/can-cid.html).
 
-With StealJS, you can import this module directly in a template that is autorendered:
+## Changelog
 
-```js
-import plugin from 'can-cid';
-```
-
-### CommonJS use
-
-Use `require` to load `can-cid` and everything else
-needed to create a template that uses `can-cid`:
-
-```js
-var plugin = require("can-cid");
-```
-
-## AMD use
-
-Configure the `can` and `jquery` paths and the `can-cid` package:
-
-```html
-<script src="require.js"></script>
-<script>
-	require.config({
-		paths: {
-			"jquery": "node_modules/jquery/dist/jquery",
-			"can": "node_modules/canjs/dist/amd/can"
-		},
-		packages: [{
-			name: 'can-cid',
-			location: 'node_modules/can-cid/dist/amd',
-			main: 'lib/can-cid'
-		}]
-	});
-	require(["main-amd"], function(){});
-</script>
-```
-
-### Standalone use
-
-Load the `global` version of the plugin:
-
-```html
-<script src='./node_modules/can-cid/dist/global/can-cid.js'></script>
-```
+See the [latest releases on GitHub](https://github.com/canjs/can-cid/releases).
 
 ## Contributing
 
-### Making a Build
+The [contribution guide](https://github.com/canjs/can-cid/blob/master/CONTRIBUTING.md) has information on getting help, reporting bugs, developing locally, and more.
 
-To make a build of the distributables into `dist/` in the cloned repository run
+## License
 
-```
-npm install
-node build
-```
+[MIT](https://github.com/canjs/can-cid/blob/master/LICENSE.md)
 
-### Running the tests
-
-Tests can run in the browser by opening a webserver and visiting the `test.html` page.
-Automated tests that run the tests from the command line in Firefox can be run with
-
-```
-npm test
-```
