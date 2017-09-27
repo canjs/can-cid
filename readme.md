@@ -4,8 +4,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/canjs/can-cid/blob/master/LICENSE.md)
 [![npm version](https://badge.fury.io/js/can-cid.svg)](https://www.npmjs.com/package/can-cid)
 [![Travis build status](https://travis-ci.org/canjs/can-cid.svg?branch=master)](https://travis-ci.org/canjs/can-cid)
-[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/canjs/can-cid?branch=master&svg=true)](https://ci.appveyor.com/project/matthewp/can-cid)
-[![Coverage status](https://coveralls.io/repos/github/canjs/can-cid/badge.svg?branch=master)](https://coveralls.io/github/canjs/can-cid?branch=master)
 [![Greenkeeper badge](https://badges.greenkeeper.io/canjs/can-cid.svg)](https://greenkeeper.io/)
 
 Utility for getting a unique identifier for an object
