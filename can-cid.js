@@ -26,12 +26,21 @@ var namespace = require('can-namespace');
  * @return {String} Returns the unique identifier
  */
 var _cid = 0;
+// DOM nodes shouldn't all use the same property
+var domExpando = "can" + new Date();
 var cid = function (object, name) {
-	if (!object._cid) {
+	var propertyName = object.nodeName ? domExpando : "_cid";
+
+	if (!object[propertyName]) {
 		_cid++;
-		object._cid = (name || '') + _cid;
+		object[propertyName] = (name || '') + _cid;
 	}
-	return object._cid;
+	return object[propertyName];
+};
+cid.domExpando = domExpando;
+cid.get = function(object){
+	var propertyName = object.nodeName ? domExpando : "_cid";
+	return object[propertyName];
 };
 
 if (namespace.cid) {

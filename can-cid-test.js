@@ -53,3 +53,16 @@ QUnit.test('should throw if can-namespace.cid is already defined', function() {
 		start();
 	});
 });
+
+if(typeof document !== "undefined") {
+	QUnit.test("works on DOM nodes", function(){
+		var el = document.createElement("div");
+
+		var id = cid(el);
+		QUnit.ok(id > 0 , "got an id");
+		var id2 = cid(el);
+		QUnit.equal(id, id2 , "got the same id");
+
+		QUnit.equal(el[cid.domExpando], id, "expando property set");
+	});
+}
