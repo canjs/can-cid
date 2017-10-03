@@ -23,7 +23,8 @@
     "release:minor": "npm version minor && npm publish",
     "release:major": "npm version major && npm publish",
     "build": "node build.js",
-    "develop": "done-serve --static --develop --port 8080"
+    "http-server": "http-server -p 3000 --silent",
+    "ci": "npm run build && npm run test && node test-saucelabs.js"
   },
   "main": "can-cid",
   "keywords": [
@@ -37,13 +38,12 @@
   },
   "devDependencies": {
     "documentjs": "^0.4.2",
-    "done-serve": "^0.2.0",
-    "donejs-cli": "^0.9.4",
-    "generator-donejs": "^1.0.7",
+    "http-server": "^0.10.0",
     "jshint": "^2.9.1",
     "steal": "^1.2.8",
     "steal-qunit": "^1.0.1",
     "steal-tools": "^1.1.2",
+    "test-saucelabs": "0.0.2",
     "testee": "^0.3.1"
   }
 }

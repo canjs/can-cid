@@ -1,5 +1,7 @@
 # can-cid
 
+[![Sauce Test Status](https://saucelabs.com/browser-matrix/can-cid.svg)](https://saucelabs.com/u/can-cid)
+
 [![Join the chat at https://gitter.im/canjs/canjs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/canjs/canjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/canjs/can-cid/blob/master/LICENSE.md)
 [![npm version](https://badge.fury.io/js/can-cid.svg)](https://www.npmjs.com/package/can-cid)
