@@ -1,7 +1,7 @@
 'use strict';
 
-var getCID = require("../can-cid");
-var each = require("../helpers");
+var getCID = require("../can-cid").get;
+var helpers = require("../helpers");
 
 var CIDMap;
 
@@ -22,7 +22,7 @@ if(typeof Map !== "undefined") {
 		return has;
 	};
 	CIDMap.prototype.forEach = function(cb, thisArg) {
-		each(this.values, function(pair){
+		helpers.each(this.values, function(pair){
 			return cb.call(thisArg || this, pair.value, pair.key, this);
 		}, this);
 	};
@@ -39,7 +39,7 @@ if(typeof Map !== "undefined") {
 	Object.defineProperty(CIDMap.prototype,"size",{
 		get: function(){
 			var size = 0;
-			each(this.values, function(){
+			helpers.each(this.values, function(){
 				size++;
 			});
 			return size;
