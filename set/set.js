@@ -1,6 +1,6 @@
 'use strict';
 var getCID = require("../can-cid");
-var each = require("../helpers");
+var helpers = require("../helpers");
 
 var CIDSet;
 
@@ -21,7 +21,7 @@ if(typeof Set !== "undefined") {
 		return has;
 	};
 	CIDSet.prototype.forEach = function(cb, thisArg) {
-		each(this.values, cb, thisArg);
+		helpers.each(this.values, cb, thisArg);
 	};
 	CIDSet.prototype.has = function(value) {
 		return (getCID(value) in this.values);
@@ -32,7 +32,7 @@ if(typeof Set !== "undefined") {
 	Object.defineProperty(CIDSet.prototype,"size",{
 		get: function(){
 			var size = 0;
-			each(this.values, function(){
+			helpers.each(this.values, function(){
 				size++;
 			});
 			return size;
