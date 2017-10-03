@@ -1,5 +1,5 @@
 'use strict';
-var getCID = require("../can-cid");
+var getCID = require("../can-cid").get;
 var helpers = require("../helpers");
 
 var CIDSet;
@@ -24,7 +24,7 @@ if(typeof Set !== "undefined") {
 		helpers.each(this.values, cb, thisArg);
 	};
 	CIDSet.prototype.has = function(value) {
-		return (getCID(value) in this.values);
+		return getCID(value) in this.values;
 	};
 	CIDSet.prototype.clear = function() {
 		return this.values = {};

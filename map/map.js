@@ -1,6 +1,6 @@
 'use strict';
 
-var getCID = require("../can-cid");
+var getCID = require("../can-cid").get;
 var helpers = require("../helpers");
 
 var CIDMap;

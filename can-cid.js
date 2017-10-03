@@ -39,8 +39,9 @@ var cid = function (object, name) {
 };
 cid.domExpando = domExpando;
 cid.get = function(object){
-	var propertyName = object.nodeName ? domExpando : "_cid";
-	return object[propertyName];
+	var type = typeof object;
+	var isObject = type !== null && (type === "object" || type === "function");
+	return isObject ? cid(object) : (type + ":" + object);
 };
 
 if (namespace.cid) {
