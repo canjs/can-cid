@@ -1,7 +1,8 @@
 var namespace = require('can-namespace');
 /**
  * @module {function} can-cid
- * @parent can-infrastructure
+ * @parent can-typed-data
+ * @collection can-infrastructure
  * @package ./package.json
  * @signature `cid(object, optionalObjectType)`
  *
