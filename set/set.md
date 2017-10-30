@@ -1,5 +1,6 @@
 @module {Map} can-util/js/cid-set/cid-set cid-set
-@parent can-util/js
+@parent can-typed-data
+@collection can-util/js
 
 Exports the native [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
 or a polyfill.

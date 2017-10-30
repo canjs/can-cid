@@ -1,5 +1,6 @@
 @module {Map} can-cid/map/map
-@parent can-cid
+@parent can-typed-data
+@collection can-cid
 
 Exports the native [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
 or a polyfill.
