@@ -1,8 +1,10 @@
 var namespace = require('can-namespace');
 /**
  * @module {function} can-cid
- * @parent can-infrastructure
+ * @parent can-typed-data
+ * @collection can-infrastructure
  * @package ./package.json
+ * @description Utility for getting a unique identifier for an object.
  * @signature `cid(object, optionalObjectType)`
  *
  * Get a unique identifier for the object, optionally prefixed by a type name.
