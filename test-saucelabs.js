@@ -31,10 +31,10 @@ var platforms = [{
 	platform: 'Windows 10'
 }, {
 	browserName: 'Safari',
-	'appium-version': '1.6.3',
+	'appium-version': '1.7.1',
 	platformName: 'iOS',
-	platformVersion: '10.0',
-	deviceName: 'iPhone 7 Simulator'
+	platformVersion: '11.0',
+	deviceName: 'iPhone 8 Simulator'
 }];
 
 var url = 'http://localhost:3000/test.html?hidepassed';
