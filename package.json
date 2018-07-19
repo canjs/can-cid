@@ -42,7 +42,7 @@
     "documentjs": "^0.4.2",
     "http-server": "^0.10.0",
     "jshint": "^2.9.1",
-    "steal": "^1.2.8",
+    "steal": "^2.0.0",
     "steal-qunit": "^1.0.1",
     "steal-tools": "^1.1.2",
     "test-saucelabs": "0.0.3",
