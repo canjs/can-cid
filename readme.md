@@ -7,8 +7,7 @@
 [![Travis build status](https://travis-ci.org/canjs/can-cid.svg?branch=master)](https://travis-ci.org/canjs/can-cid)
 [![Greenkeeper badge](https://badges.greenkeeper.io/canjs/can-cid.svg)](https://greenkeeper.io/)
 
-[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/canjs/can-cid?branch=master&svg=true)](https://ci.appveyor.com/project/matthewp/can-cid)
-
+[![Sauce Test Status](https://saucelabs.com/browser-matrix/can-cid.svg)](https://saucelabs.com/u/can-cid)
 Utility for getting a unique identifier for an object
 
 ## Documentation
