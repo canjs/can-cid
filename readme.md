@@ -8,6 +8,7 @@
 [![Greenkeeper badge](https://badges.greenkeeper.io/canjs/can-cid.svg)](https://greenkeeper.io/)
 
 [![Sauce Test Status](https://saucelabs.com/browser-matrix/can-cid.svg)](https://saucelabs.com/u/can-cid)
+
 Utility for getting a unique identifier for an object
 
 ## Documentation
