@@ -5,7 +5,7 @@ var CIDMap = require('./map');
 
 QUnit.module("can-cid/map");
 
-QUnit.test("basics", function(){
+QUnit.test("basics", function(assert) {
 	var o1 = {},
 		o2 = {},
 		o3 = {};
@@ -15,19 +15,19 @@ QUnit.test("basics", function(){
 	map.set(o1,"o1");
 	map.set(o2,"o2");
 
-	QUnit.equal( map.get(o1), "o1");
-	QUnit.equal( map.get(o2), "o2");
-	QUnit.equal( map.get(o3), undefined);
+	assert.equal( map.get(o1), "o1");
+	assert.equal( map.get(o2), "o2");
+	assert.equal( map.get(o3), undefined);
 
-	QUnit.equal(map.size, 2);
+	assert.equal(map.size, 2);
 
 	map.clear();
 
-	QUnit.equal(map.size, 0);
+	assert.equal(map.size, 0);
 });
 
 
-QUnit.test("forEach", function(){
+QUnit.test("forEach", function(assert) {
 	var o1 = {},
 		o2 = {};
 
@@ -39,11 +39,11 @@ QUnit.test("forEach", function(){
 
 	map.forEach(function(value, key){
 		if(value === "o1") {
-			QUnit.equal(key, o1);
+			assert.equal(key, o1);
 		} else if(value === "o2") {
-			QUnit.equal(key, o2);
+			assert.equal(key, o2);
 		} else {
-			QUnit.ok(false, "key shouldn't be "+value);
+			assert.ok(false, "key shouldn't be "+value);
 		}
 	});
 });

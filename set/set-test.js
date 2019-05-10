@@ -5,7 +5,7 @@ var CIDSet = require('./set');
 
 QUnit.module("can-cid/set");
 
-QUnit.test("basics", function(){
+QUnit.test("basics", function(assert) {
 	var o1 = {},
 		o2 = {};
 
@@ -14,17 +14,17 @@ QUnit.test("basics", function(){
 	set.add(o1);
 	set.add(o2);
 
-	QUnit.ok( set.has(o1), "has o1");
-	QUnit.ok( set.has(o2), "has o2");
+	assert.ok( set.has(o1), "has o1");
+	assert.ok( set.has(o2), "has o2");
 
-	QUnit.equal(set.size, 2, "size === 2");
+	assert.equal(set.size, 2, "size === 2");
 
 	set.clear();
 
-	QUnit.equal(set.size, 0, "size === 0");
+	assert.equal(set.size, 0, "size === 0");
 });
 
-QUnit.test("primitives", function(){
+QUnit.test("primitives", function(assert) {
 	var set = new CIDSet();
 
 	set.add(0);
@@ -32,15 +32,15 @@ QUnit.test("primitives", function(){
 	set.add(1);
 	set.add("1");
 
-	QUnit.equal(set.size, 3, "size === 3");
+	assert.equal(set.size, 3, "size === 3");
 
-	QUnit.ok( set.has(0), "has 0" );
-	QUnit.ok( !set.has("0"), "! has '0'");
-	QUnit.ok( set.has(1) , "has 1");
-	QUnit.ok( set.has("1"), "! has '1'");
+	assert.ok( set.has(0), "has 0" );
+	assert.ok( !set.has("0"), "! has '0'");
+	assert.ok( set.has(1) , "has 1");
+	assert.ok( set.has("1"), "! has '1'");
 
 
 	set.clear();
 
-	QUnit.equal(set.size, 0);
+	assert.equal(set.size, 0);
 });
