@@ -34,6 +34,7 @@
     "plugin",
     "donejs"
   ],
+  "license": "MIT",
   "dependencies": {
     "can-namespace": "1.0.0"
   },
